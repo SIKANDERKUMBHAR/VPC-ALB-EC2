@@ -48,13 +48,13 @@ output "bastion_public_ip" {
 }
 
 # Output the public IP of web1 instance
-output "web1_public_ip" {
+output "web1_private_ip" {
   description = "The public IP of the web1 instance"
   value       = aws_instance.web1.private_ip
 }
 
 # Output the public IP of web2 instance
-output "web2_public_ip" {
+output "web2_private_ip" {
   description = "The public IP of the web2 instance"
   value       = aws_instance.web2.private_ip
 }
